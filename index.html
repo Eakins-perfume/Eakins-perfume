@@ -39,34 +39,40 @@
   <!-- 正確放置 JS（最尾執行） -->
   <script src="https://cdn.jsdelivr.net/npm/tsparticles@3.0.2/tsparticles.bundle.min.js"></script>
   <script>
-    window.addEventListener("DOMContentLoaded", () => {
-      tsParticles.load("tsparticles", {
-        fullScreen: { enable: true, zIndex: -1 },
-        background: { color: "#000" },
-        particles: {
-          number: { value: 60 },
-          color: { value: ["#ffffff", "#d4af37"] },
-          shape: { type: "circle" },
-          opacity: { value: 0.4, random: true },
-          size: { value: 2, random: true },
-          move: {
-            enable: true,
-            speed: 0.6,
-            direction: "none",
-            random: true,
-            straight: false,
-            outModes: "out"
-          }
+  window.addEventListener("DOMContentLoaded", () => {
+    tsParticles.load("tsparticles", {
+      fullScreen: { enable: true, zIndex: -1 },
+      background: { color: "#000" },
+      particles: {
+        number: { value: 100 }, // 粒子密度提升
+        color: { value: ["#ffffff", "#ffd700", "#d4af37"] }, // 增加金黃色
+        shape: { type: "circle" },
+        opacity: {
+          value: 0.6, // 更實色
+          random: true
         },
-        interactivity: {
-          events: {
-            onHover: { enable: false },
-            onClick: { enable: false }
-          }
+        size: {
+          value: 3, // 粒子放大
+          random: true
         },
-        detectRetina: true
-      });
+        move: {
+          enable: true,
+          speed: 0.4, // 慢慢飄
+          direction: "none",
+          random: true,
+          straight: false,
+          outModes: "out"
+        }
+      },
+      interactivity: {
+        events: {
+          onHover: { enable: false },
+          onClick: { enable: false }
+        }
+      },
+      detectRetina: true
     });
-  </script>
+  });
+</script>
 </body>
 </html>
