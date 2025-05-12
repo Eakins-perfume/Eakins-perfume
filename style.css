@@ -76,6 +76,22 @@ body {
   margin: 0 auto;
 }
 
+.scent-story p {
+  line-height: 1.8;
+  font-size: 16px;
+  color: #ddd;
+}
+
+@media (max-width: 768px) {
+  .scent-story h2 {
+    font-size: 22px;
+  }
+  .scent-story p {
+    font-size: 15px;
+  }
+}
+
+
 /* === 粒子背景 === */
 #tsparticles {
   position: fixed;
