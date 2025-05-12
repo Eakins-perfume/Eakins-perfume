@@ -86,3 +86,50 @@ body {
   z-index: -1;
   pointer-events: none;
 }
+
+.custom-experience {
+  text-align: center;
+  padding: 80px 20px 60px;
+  background-color: #000;
+}
+
+.custom-title {
+  font-size: 32px;
+  font-weight: 600;
+  color: #D4AF37;
+  margin-bottom: 40px;
+}
+
+.steps {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 30px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.step {
+  background-color: #111;
+  border: 1px solid #333;
+  border-radius: 12px;
+  padding: 20px;
+  transition: transform 0.3s ease;
+}
+
+.step:hover {
+  transform: translateY(-5px);
+}
+
+.step-num {
+  font-size: 24px;
+  font-weight: bold;
+  color: #D4AF37;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.step-text {
+  color: #ddd;
+  font-size: 15px;
+}
+
