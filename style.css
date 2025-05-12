@@ -131,23 +131,30 @@ body {
 .cta-button {
   display: inline-block;
   padding: 12px 24px;
-  background: linear-gradient(135deg, #d4af37, #b8860b); /* 拉絲金風格漸變 */
-  color: #000;
   font-weight: bold;
   border: none;
   border-radius: 8px;
   text-decoration: none;
-  box-shadow: 0 4px 12px rgba(255, 215, 0, 0.2);
-  transition: background 0.3s ease, transform 0.3s ease;
+  color: #000;
+  background-image:
+    linear-gradient(135deg, #d4af37, #b8860b),
+    repeating-linear-gradient(
+      90deg,
+      rgba(255, 255, 255, 0.08),
+      rgba(255, 255, 255, 0.08) 1px,
+      transparent 1px,
+      transparent 3px
+    );
+  background-blend-mode: overlay;
+  box-shadow: 0 4px 12px rgba(212, 175, 55, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .cta-button:hover {
-  background: linear-gradient(135deg, #b8860b, #d4af37); /* 深淺互換加強金屬感 */
   transform: translateY(-2px);
-  color: #000;
+  box-shadow: 0 6px 18px rgba(212, 175, 55, 0.4);
+  cursor: pointer;
 }
-
-
 
 /* === 影片區塊 === */
 .video-wrapper {
