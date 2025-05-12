@@ -1,15 +1,15 @@
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", sans-serif;
-  background-color: #ffffff;
-  color: #111;
+  background-color: #000;
+  color: #fff;
   line-height: 1.6;
   overflow-x: hidden;
 }
 
 .hero {
   height: 100vh;
-  background: linear-gradient(to bottom, #ececec, #f8f8f8);
+  background: #000;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -27,11 +27,12 @@ body {
   font-weight: 700;
   margin: 0;
   letter-spacing: 2px;
+  color: #D4AF37; /* 金色字 */
 }
 
 .tagline {
   font-size: 20px;
-  color: #444;
+  color: #bbb;
   margin-top: 12px;
 }
 
@@ -52,12 +53,13 @@ body {
 .section h2 {
   font-size: 28px;
   margin-bottom: 1rem;
+  color: #D4AF37;
 }
 
 .section p,
 .section ul {
   font-size: 16px;
-  color: #333;
+  color: #ddd;
 }
 
 .section ul {
