@@ -293,9 +293,9 @@ body {
 }
 
 .footer-icon {
-  width: 10px;
-  height: 10px;
-  margin-right: 5px;
+  width: 16px;
+  height: 16px;
+  margin-right: 8px;
   filter: brightness(0.9);
 }
 
