@@ -130,30 +130,56 @@ body {
 /* === CTA 按鈕 === */
 .cta-button {
   display: inline-block;
-  padding: 12px 24px;
-  font-weight: bold;
+  padding: 14px 32px;
+  font-weight: 600;
+  font-size: 16px;
+  color: #fff;
   border: none;
   border-radius: 8px;
-  text-decoration: none;
-  color: #fff; /* ✅ 改成白色字 */
-  background-image:
-    linear-gradient(135deg, #d4af37, #b8860b),
-    repeating-linear-gradient(
-      90deg,
-      rgba(255, 255, 255, 0.08),
-      rgba(255, 255, 255, 0.08) 1px,
-      transparent 1px,
-      transparent 3px
-    );
-  background-blend-mode: overlay;
-  box-shadow: 0 4px 12px rgba(212, 175, 55, 0.2);
+  background: linear-gradient(
+      135deg,
+      #d4af37,
+      #f5deb3,
+      #b8860b
+    ); /* 金色漸變 */
+  background-size: 300% 300%;
+  box-shadow: 0 4px 15px rgba(212, 175, 55, 0.3);
+  position: relative;
+  overflow: hidden;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.cta-button::before {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -25%;
+  width: 200%;
+  height: 200%;
+  background: linear-gradient(
+    120deg,
+    rgba(255, 255, 255, 0.1) 0%,
+    rgba(255, 255, 255, 0.4) 40%,
+    rgba(255, 255, 255, 0.1) 60%,
+    transparent 100%
+  );
+  transform: rotate(25deg);
+  animation: shimmer 2.5s infinite;
 }
 
 .cta-button:hover {
   transform: translateY(-2px);
-  box-shadow: 0 6px 18px rgba(212, 175, 55, 0.4);
+  box-shadow: 0 6px 25px rgba(255, 215, 0, 0.35);
   cursor: pointer;
+}
+
+@keyframes shimmer {
+  0% {
+    transform: translateX(-100%) rotate(25deg);
+  }
+  100% {
+    transform: translateX(100%) rotate(25deg);
+  }
 }
 
 /* === 影片區塊 === */
