@@ -191,9 +191,14 @@ body {
   font-weight: 700;
   margin: 0;
   letter-spacing: 2px;
-  color: #D4AF37;
+  background: linear-gradient(90deg, #d4af37, #f5e197, #d4af37);
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shine 3s linear infinite;
   text-shadow: 0 2px 8px rgba(212, 175, 55, 0.4);
 }
+
 
 .video-embed {
   width: 100%;
