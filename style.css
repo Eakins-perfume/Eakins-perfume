@@ -201,9 +201,16 @@ body {
 }
 
 .video-embed {
+  width: 100%;
+  height: auto;
+  max-height: 540px;
+  display: block;
+  border: none;
   animation: videoFade 1.5s ease-in-out forwards;
   opacity: 0;
+  object-fit: contain; /* ✅ 關鍵：保持完整比例顯示 */
 }
+
 
 @keyframes videoFade {
   to {
