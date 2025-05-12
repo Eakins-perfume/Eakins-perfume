@@ -135,7 +135,7 @@ body {
   border: none;
   border-radius: 8px;
   text-decoration: none;
-  color: #000;
+  color: #fff; /* ✅ 改成白色字 */
   background-image:
     linear-gradient(135deg, #d4af37, #b8860b),
     repeating-linear-gradient(
