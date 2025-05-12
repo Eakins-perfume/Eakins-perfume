@@ -206,6 +206,18 @@ body {
   object-fit: contain; /* ✅ 關鍵：保持完整比例顯示 */
 }
 
+.scroll-fade {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.scroll-fade.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
 @media (max-width: 768px) {
   .video-embed {
     max-height: 320px;
