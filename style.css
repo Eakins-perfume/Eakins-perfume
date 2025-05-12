@@ -48,8 +48,9 @@ body {
 .section h2 {
   font-size: 28px;
   margin-bottom: 1rem;
-  color: #D4AF37;
+  color: #fff;
 }
+
 
 .section p,
 .section ul {
@@ -91,7 +92,7 @@ body {
 .custom-title {
   font-size: 32px;
   font-weight: 600;
-  color: #D4AF37;
+  color: #fff;
   margin-bottom: 40px;
 }
 
@@ -118,7 +119,7 @@ body {
 .step-num {
   font-size: 24px;
   font-weight: bold;
-  color: #D4AF37;
+  color: #fff;
   display: block;
   margin-bottom: 10px;
 }
