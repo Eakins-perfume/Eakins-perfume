@@ -211,6 +211,12 @@ body {
   object-fit: contain; /* ✅ 關鍵：保持完整比例顯示 */
 }
 
+@media (max-width: 768px) {
+  .video-embed {
+    max-height: 320px;
+  }
+}
+
 
 @keyframes videoFade {
   to {
