@@ -200,9 +200,32 @@ body {
   text-shadow: 0 2px 8px rgba(212, 175, 55, 0.4);
 }
 
-@keyframes fadeIn {
+.video-embed {
+  animation: videoFade 1.5s ease-in-out forwards;
+  opacity: 0;
+}
+
+@keyframes videoFade {
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInText {
   from { opacity: 0; transform: translateY(10px); }
   to { opacity: 1; transform: translateY(0); }
 }
 
+.video-caption {
+  /* 原本用 fadeIn，改用新動畫名稱避免衝突 */
+  animation: fadeInText 1.5s ease forwards;
+}
+
+
+@media (max-width: 768px) {
+  .video-caption {
+    font-size: 18px;
+    padding: 8px 16px;
+  }
+}
 
