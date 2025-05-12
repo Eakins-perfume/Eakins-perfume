@@ -69,6 +69,13 @@ body {
   padding-left: 20px;
 }
 
+.scent-story {
+  text-align: center;
+  padding: 60px 20px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
 /* === 粒子背景 === */
 #tsparticles {
   position: fixed;
