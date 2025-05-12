@@ -131,19 +131,14 @@ body {
 .cta-button {
   display: inline-block;
   padding: 14px 32px;
-  font-weight: 600;
   font-size: 16px;
+  font-weight: bold;
   color: #fff;
+  text-decoration: none; /* 👈 移除底線 */
+  background: linear-gradient(135deg, #c8a95a, #a17336);
   border: none;
   border-radius: 8px;
-  background: linear-gradient(
-      135deg,
-      #d4af37,
-      #f5deb3,
-      #b8860b
-    ); /* 金色漸變 */
-  background-size: 300% 300%;
-  box-shadow: 0 4px 15px rgba(212, 175, 55, 0.3);
+  box-shadow: 0 4px 20px rgba(160, 120, 40, 0.4);
   position: relative;
   overflow: hidden;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -153,34 +148,30 @@ body {
   content: "";
   position: absolute;
   top: -50%;
-  left: -25%;
+  left: -50%;
   width: 200%;
   height: 200%;
   background: linear-gradient(
     120deg,
-    rgba(255, 255, 255, 0.1) 0%,
-    rgba(255, 255, 255, 0.4) 40%,
-    rgba(255, 255, 255, 0.1) 60%,
+    rgba(255, 255, 255, 0.05) 0%,
+    rgba(255, 255, 255, 0.3) 40%,
+    rgba(255, 255, 255, 0.05) 60%,
     transparent 100%
   );
   transform: rotate(25deg);
-  animation: shimmer 2.5s infinite;
+  animation: shimmer 3s infinite;
 }
 
 .cta-button:hover {
   transform: translateY(-2px);
-  box-shadow: 0 6px 25px rgba(255, 215, 0, 0.35);
-  cursor: pointer;
+  box-shadow: 0 6px 30px rgba(212, 175, 55, 0.5);
 }
 
 @keyframes shimmer {
-  0% {
-    transform: translateX(-100%) rotate(25deg);
-  }
-  100% {
-    transform: translateX(100%) rotate(25deg);
-  }
+  0% { transform: translateX(-100%) rotate(25deg); }
+  100% { transform: translateX(100%) rotate(25deg); }
 }
+
 
 /* === 影片區塊 === */
 .video-wrapper {
