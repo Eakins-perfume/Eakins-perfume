@@ -37,27 +37,27 @@
   </main>
 
   <!-- 正確放置 JS（最尾執行） -->
-  <script src="https://cdn.jsdelivr.net/npm/tsparticles@3.0.2/tsparticles.bundle.min.js"></script>
-  <script>
+ <script src="https://cdn.jsdelivr.net/npm/tsparticles@3.0.2/tsparticles.bundle.min.js"></script>
+<script>
   window.addEventListener("DOMContentLoaded", () => {
     tsParticles.load("tsparticles", {
       fullScreen: { enable: true, zIndex: -1 },
       background: { color: "#000" },
       particles: {
-        number: { value: 100 }, // 粒子密度提升
-        color: { value: ["#ffffff", "#ffd700", "#d4af37"] }, // 增加金黃色
+        number: { value: 100 },
+        color: { value: ["#ffffff", "#ffd700", "#d4af37"] },
         shape: { type: "circle" },
         opacity: {
-          value: 0.6, // 更實色
+          value: 0.6,
           random: true
         },
         size: {
-          value: 3, // 粒子放大
+          value: 3,
           random: true
         },
         move: {
           enable: true,
-          speed: 0.4, // 慢慢飄
+          speed: 0.4,
           direction: "none",
           random: true,
           straight: false,
