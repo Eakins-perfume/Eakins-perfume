@@ -7,7 +7,10 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+  <!-- 粒子背景容器 -->
   <div id="tsparticles"></div>
+
+  <!-- 品牌展示 -->
   <div class="hero">
     <div class="overlay">
       <h1 class="brand">Eakins</h1>
@@ -33,34 +36,36 @@
     </section>
   </main>
 
-  <!-- ✅ 將 script 移到這裡 -->
+  <!-- 正確放置 JS（最尾執行） -->
   <script src="https://cdn.jsdelivr.net/npm/tsparticles@3.0.2/tsparticles.bundle.min.js"></script>
   <script>
-    tsParticles.load("tsparticles", {
-      fullScreen: { enable: true, zIndex: -1 },
-      background: { color: "#000" },
-      particles: {
-        number: { value: 60 },
-        color: { value: ["#ffffff", "#d4af37"] },
-        shape: { type: "circle" },
-        opacity: { value: 0.4, random: true },
-        size: { value: 2, random: true },
-        move: {
-          enable: true,
-          speed: 0.6,
-          direction: "none",
-          random: true,
-          straight: false,
-          outModes: "out"
-        }
-      },
-      interactivity: {
-        events: {
-          onHover: { enable: false },
-          onClick: { enable: false }
-        }
-      },
-      detectRetina: true
+    window.addEventListener("DOMContentLoaded", () => {
+      tsParticles.load("tsparticles", {
+        fullScreen: { enable: true, zIndex: -1 },
+        background: { color: "#000" },
+        particles: {
+          number: { value: 60 },
+          color: { value: ["#ffffff", "#d4af37"] },
+          shape: { type: "circle" },
+          opacity: { value: 0.4, random: true },
+          size: { value: 2, random: true },
+          move: {
+            enable: true,
+            speed: 0.6,
+            direction: "none",
+            random: true,
+            straight: false,
+            outModes: "out"
+          }
+        },
+        interactivity: {
+          events: {
+            onHover: { enable: false },
+            onClick: { enable: false }
+          }
+        },
+        detectRetina: true
+      });
     });
   </script>
 </body>
