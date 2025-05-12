@@ -6,36 +6,6 @@
   <title>Eakins – 香氣，是生活的延伸</title>
   <link rel="stylesheet" href="style.css" />
 </head>
-<!-- 粒子背景效果 -->
-<script src="https://cdn.jsdelivr.net/npm/tsparticles@3.0.2/tsparticles.bundle.min.js"></script>
-<script>
-  tsParticles.load("tsparticles", {
-    fullScreen: { enable: true, zIndex: -1 },
-    background: { color: "#000" },
-    particles: {
-      number: { value: 60 },
-      color: { value: ["#ffffff", "#d4af37"] },
-      shape: { type: "circle" },
-      opacity: { value: 0.4, random: true },
-      size: { value: 2, random: true },
-      move: {
-        enable: true,
-        speed: 0.6,
-        direction: "none",
-        random: true,
-        straight: false,
-        outModes: "out"
-      }
-    },
-    interactivity: {
-      events: {
-        onHover: { enable: false },
-        onClick: { enable: false }
-      }
-    },
-    detectRetina: true
-  });
-</script>
 <body>
   <div id="tsparticles"></div>
   <div class="hero">
@@ -62,5 +32,36 @@
       </ul>
     </section>
   </main>
+
+  <!-- ✅ 將 script 移到這裡 -->
+  <script src="https://cdn.jsdelivr.net/npm/tsparticles@3.0.2/tsparticles.bundle.min.js"></script>
+  <script>
+    tsParticles.load("tsparticles", {
+      fullScreen: { enable: true, zIndex: -1 },
+      background: { color: "#000" },
+      particles: {
+        number: { value: 60 },
+        color: { value: ["#ffffff", "#d4af37"] },
+        shape: { type: "circle" },
+        opacity: { value: 0.4, random: true },
+        size: { value: 2, random: true },
+        move: {
+          enable: true,
+          speed: 0.6,
+          direction: "none",
+          random: true,
+          straight: false,
+          outModes: "out"
+        }
+      },
+      interactivity: {
+        events: {
+          onHover: { enable: false },
+          onClick: { enable: false }
+        }
+      },
+      detectRetina: true
+    });
+  </script>
 </body>
 </html>
