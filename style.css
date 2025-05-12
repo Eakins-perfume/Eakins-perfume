@@ -151,19 +151,26 @@ body {
 }
 
 
-.video-section {
-  position: relative;
-  width: 100%;
-  height: 100vh;
-  overflow: hidden;
+.video-wrapper {
+  background-color: #000;
+  padding: 80px 20px;
+  display: flex;
+  justify-content: center;
 }
 
-.video-bg {
-  position: absolute;
-  top: 0;
-  left: 0;
-  min-width: 100%;
-  min-height: 100%;
-  object-fit: cover;
-  z-index: -2;
+.video-container {
+  max-width: 960px;
+  width: 100%;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 10px 40px rgba(212, 175, 55, 0.2);
 }
+
+.video-embed {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+  border: none;
+}
+
